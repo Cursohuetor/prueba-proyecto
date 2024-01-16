@@ -1,0 +1,115 @@
+/*toda la explicación en https://www.mclibre.org/consultar/htmlcss/css/css-flexbox.html#justify-content*/
+
+/*DISPLAY:FLEX*/
+/*
+div { display: flex; margin-bottom: 5px; background-color: #eee; }
+p { width: 100px; border: black 1px solid; margin: 2px; }*/
+
+/*DISPLAY:INLINE-FLEX*/
+/*
+div { display: inline-flex; margin-bottom: 5px; background-color: #eee; }
+p { width: 100px; border: black 1px solid; margin: 2px; }*/
+
+/*FLEX-DIRECTION:ROW-REVERSE*/
+/*
+div { display: flex; flex-direction: row-reverse; }
+p { width: 100px; border: black 1px solid; margin: 2px; }*/
+
+/*FLEX-DIRECTION:ROW-REVERSE*/
+/*
+div { display: flex; flex-direction: row-reverse; }
+p { width: 100px; border: black 1px solid; margin: 2px; }*/
+
+/*FLEX-DIRECTION:COLUMN*/
+/*
+div { display: flex; flex-direction: column; }
+p { width: 100px; border: black 1px solid; margin: 2px; }
+*/
+
+/*FLEX-DIRECTION:COLUMN-REVERSE*/
+/*
+div { display: flex; flex-direction: column-reverse; }
+p { width: 100px; border: black 1px solid; margin: 2px; }
+*/
+
+/*FLEX-WRAP:NO-WRAP*/
+/*
+div { display: flex; flex-wrap: no-wrap; }
+p { width: 100px; border: black 1px solid; margin: 2px; }
+*/
+
+/*FLEX-WRAP:WRAP*/
+/*
+div { display: flex; flex-wrap: wrap; }
+p { width: 100px; border: black 1px solid; margin: 2px; }
+*/
+
+/*FLEX-WRAP:WRAP-REVERSE*/
+/*
+div { display: flex; flex-wrap: wrap-reverse; }
+p { width: 100px; border: black 1px solid; margin: 2px; }
+*/
+
+/*FLEX-FLOW:ROW-REVERSE WRAP;  este combina los dos anteriores "wrap y direction" en una sola propiedad*/
+/*
+div { display: flex; flex-flow: wrap row-reverse; }
+p { width: 100px; border: black 1px solid; margin: 2px; }
+*/
+
+/*ORDER:-1*/
+/*
+div { display: flex; }
+p { width: 100px; border: black 1px solid; margin: 2px; }
+p.primero { order: -1; }
+*/
+
+/*FLEX-BASIS    como el tamaño de las cajas se adapta al contenido , en caso de que queremos que sea un tamaño fijo le aplicamos flex-basis con una medida para que esta sea fija*/
+/*
+div { display: flex; }
+p { flex-basis: 120px; border: black 1px solid; margin: 2px; }
+*/
+
+/*MARGIN:AUTO le da el espacio que pudiera sobrar al lado del elemento que selecionemos con margin auto, en este ejemplo le deja el espacio que sobra al parraf al que le demos la clase "derecha"*/
+/*
+div { display: flex; }
+p { border: black 1px solid; margin: 2px; }
+p.derecha { margin-left: auto; }
+*/
+
+/*JUSTIFY-CONTENT  La propiedad justify-content establece la forma en que se reparte el espacio libre disponible en la dirección principal.*/
+/*
+div { display: flex; justify-content: flex-end; }
+p { border: black 1px solid; margin: 2px; }
+*/
+
+/*ALIGN-ITEM La propiedad align-items establece la forma en que se alinean los ELEMENTOS en la dirección secundaria.
+el ejemplo se ve claramente si hacemos zoom en el navegador para ver como se alinea el contenido de las cajas*/
+/*
+div { display: flex; align-items: center; }
+p { border: black 1px solid; margin: 2px; }
+*/
+
+/*ALIGN-CONTENT  Alineación en la dirección secundaria (varias líneas): align-contentalign-content
+Recomendación CSS3 Mozilla Developer Network
+La propiedad align-content establece la manera en que se reparte el espacio sobrante en la dirección secundaria.
+
+Normalmente, el espacio ocupado en la dirección secundaria por un elemento flexible depende de su contenido, por lo que no suele haber espacio sobrante. Por ello, en los ejemplos siguientes el espacio disponible en la dirección secundaria se ha establecido con la propiedad height, de manera que haya espacio sobrante.*/
+/*
+div { display: flex; height: 10em;
+  flex-wrap: wrap; align-items: flex-end;
+  background-color:rgb(193, 84, 84);
+}
+p { width: 200px; border: black 1px solid; margin: 2px; }
+*/
+
+/*PRUEBAS MEZCLANDO ITEM Y CONTENT en align*/
+/**/
+div { display: flex; height: 10em;
+    flex-wrap: wrap; align-items: center;align-content:flex-end;
+    background-color:rgb(193, 84, 84);
+  }
+  p { width: 200px; border: black 1px solid; margin: 2px; }
+
+
+
+
